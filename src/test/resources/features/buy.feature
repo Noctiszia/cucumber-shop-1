@@ -15,4 +15,10 @@ Scenario: Buy multiple products
     And I buy "Jam" with quantity 1
     Then total should be 121.00
 
+Scenario: Buy three products
+    When I buy "Butter" with quantity 2
+    And I buy "Jam" with quantity 3
+    And I buy "Bread" with quantity 4
+    Then total should be 442
+
 
